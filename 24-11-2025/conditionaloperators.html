@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> conditional operators</title>
+    </head>
+    <body> 
+        <script>
+        document.write(" conditional statements\n");
+        document.write(" example for if else block \n");
+        document.write(" ");
+        let a = 20;
+        document.write(a);
+        if(a<10)
+        {
+            document.write('a is lesser than 10');
+        }
+        else
+        {
+            document.write('a is greater than 10');
+
+        }
+
+        document.write("example for if else-if block")
+        let b=10;
+        let c=20;
+        let d=30;
+        document.write(b);
+        document.write(c);
+        document.write(d);
+        if(b>c && b>d)
+        {
+            document.write("b is greater");
+        }
+        else if(c>b && c>d)
+        {
+            document.write("c is greater");
+        }
+        else{
+            document.write("d is greater");
+        }
+
+        document.write("ternery operators");
+        let age = 20;
+        document.write(age);
+        let text =(age<20)?"eligible":"not eligible";
+        document.write(text);
+        </script>
+    </body>
+</html>

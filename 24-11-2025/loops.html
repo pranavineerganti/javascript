@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>loops</title>
+    </head>
+    <body>
+        <script>
+            document.write("this is from for loop<br>");
+            
+            let a = 20;
+            document.write(a + "<br>");
+
+            for (let i = 0; i < a; i++) {
+                document.write(i + "<br>");
+            }
+
+            document.write("this is from while loop<br>");
+            
+            let l = 20;
+            let sum = 0;
+            while (l >= 0) {
+                sum += l;
+                document.write(sum + "<br>");
+                l--;
+            }
+
+            document.write("this is from do-while<br>");
+
+            let s = 5;
+            do {
+                document.write("this is from do block<br>");
+                document.write(s + "<br>");
+                s--;
+            } while (s >= 0);
+        </script>
+    </body>
+</html>
