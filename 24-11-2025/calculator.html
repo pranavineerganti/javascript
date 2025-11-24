@@ -120,10 +120,32 @@ function calculate() {
 }
 
 window.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
+    let key = event.key;
+
+    if (!isNaN(key) || "+-*/.".includes(key)) {
+        append(key);
+    }
+
+
+    if (key === "Enter") {
+        calculate();
+    }
+
+    if (key === "Escape") {
         clearDisplay();
     }
+
+    if (key === "Backspace") {
+        if (display.value.length > 1) {
+            display.value = display.value.slice(0, -1);
+        } else {
+            display.value = "0";
+        }
+    }
 });
+
 </script>
 </body>
 </html>
+
+
