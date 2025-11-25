@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>All String Functions</title>
+    </head>
+    <body>
+        <h1>JavaScript String Handling Functions</h1>
+
+        <script>
+            let name = prompt("Enter your name");
+
+            document.write("<b>Original String:</b> " + name + "<br><br>");
+
+            document.write("Length: " + name.length + "<br>");
+            document.write("Uppercase: " + name.toUpperCase() + "<br>");
+            document.write("Lowercase: " + name.toLowerCase() + "<br><br>");
+
+        
+            document.write("charAt(0): " + name.charAt(0) + "<br>");
+            document.write("charCodeAt(0): " + name.charCodeAt(0) + "<br><br>");
+
+
+            document.write("slice(1, 4): " + name.slice(1, 4) + "<br>");
+            document.write("substring(1, 4): " + name.substring(1, 4) + "<br>");
+            document.write("substr(1, 4): " + name.substr(1, 4) + "<br><br>");
+
+            
+            document.write("indexOf('a'): " + name.indexOf("a") + "<br>");
+            document.write("lastIndexOf('a'): " + name.lastIndexOf("a") + "<br>");
+            document.write("includes('a'): " + name.includes("a") + "<br>");
+            document.write("startsWith('A'): " + name.startsWith("A") + "<br>");
+            document.write("endsWith('a'): " + name.endsWith("a") + "<br><br>");
+
+        
+            document.write("replace first 'a' with '@': " + name.replace("a", "@") + "<br>");
+            document.write("replace all 'a' with '@': " + name.replaceAll("a", "@") + "<br><br>");
+
+    
+            document.write("concat(): " + name.concat("123", "XYZ") + "<br><br>");
+
+            
+            let spaced = "   " + name + "   ";
+            document.write("Trim: '" + spaced.trim() + "'<br>");
+            document.write("TrimStart: '" + spaced.trimStart() + "'<br>");
+            document.write("TrimEnd: '" + spaced.trimEnd() + "'<br><br>");
+
+            
+            document.write("Repeat: " + name.repeat(3) + "<br><br>");
+
+            
+            document.write("Split into characters: " + name.split("") + "<br>");
+            document.write("Split by 'a': " + name.split("a") + "<br><br>");
+
+        </script>
+    </body>
+</html>

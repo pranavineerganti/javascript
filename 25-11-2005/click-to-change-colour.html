@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Non-Repeating Colors</title>
+</head>
+<body style="background-color: lightblue;">
+
+<h1>Click anywhere or press any key to change colour</h1>
+
+<script>
+    let colors = [
+    "lavender", "thistle", "plum", "mistyrose", "pink",
+    "lightpink", "peachpuff", "papayawhip", "moccasin", "wheat",
+    "lightyellow", "lemonchiffon", "honeydew", "mintcream", "azure",
+    "aliceblue", "lightcyan", "powderblue", "lightblue", "lightskyblue",
+    "skyblue", "lightsteelblue", "cornsilk", "oldlace", "palegreen",
+    "lightgreen", "mediumaquamarine", "aquamarine", "mediumseagreen",
+    "lavenderblush", "mediumorchid", "violet", "slateblue",
+    "ghostwhite", "whitesmoke", "gainsboro", "beige",
+    "linen", "seashell", "lightcoral", "salmon", "lightsalmon",
+    "sandybrown", "burlywood", "tan", "navajowhite"
+];
+
+    function changeColor() {
+            newColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = newColor;
+    }
+
+    document.addEventListener("click", changeColor);
+    document.addEventListener("keydown", changeColor);
+</script>
+
+</body>
+</html>

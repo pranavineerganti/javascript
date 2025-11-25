@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> counter</title>
+    </head>
+    <body style="background-color: aqua;"> 
+        <h1>character counter</h1>
+        <p> this is a character counter enter some characters to find the lenth of the character</p>
+        <input type="text" id="demo" placeholder="enter some characters">
+        <h1 id="pass"></h1>
+        <button onclick="counter()">click me to count</button>
+        <script>
+            function counter()
+            {
+                let ele=document.getElementById("demo");
+                 let m = ele.value.length;
+                document.getElementById("pass").innerHTML=m;
+            }
+            
+        </script>
+    </body>
+</html>

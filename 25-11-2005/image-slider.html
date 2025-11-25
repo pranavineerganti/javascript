@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>image-slider</title>
+    </head>
+    <body style="background-color: rgb(186, 218, 223);">
+        <h1> This is  a image slider of 3 pictures</h1>
+        <img id="myImage" src="" width="300">
+        <h4> click prev to see the previous photos</h4>
+        <h4> click next to see the next photos</h4>
+        <button id="prev" onclick="prev()">PREV</button>
+        <button id="next" onclick="next()">NEXT</button>
+        <script>
+            let img=["thar1.jpeg","thar2.jpeg","thar3.jpeg"]
+            let index = 0;
+            function prev()
+            {
+                if(index===0)
+                 {
+                    index=img.length-1;
+                    document.getElementById("myImage").src = img[index];
+                 }
+                 else{
+                    index--;
+                    document.getElementById("myImage").src = img[index];  
+                 }
+            }
+            function next()
+            {
+                if(index === img.length-1)
+                {
+                   index=0;
+                   document.getElementById("myImage").src = img[index];
+                }
+                else
+                {
+                    index++;
+                    document.getElementById("myImage").src = img[index];
+                }
+            }
+        </script>
+    </body>
+</html>

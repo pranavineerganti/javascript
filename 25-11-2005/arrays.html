@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> arrays</title>
+    </head>
+    <body>
+        <h1> arrays in javascript</h1>
+        <script>
+            let name=[10,20,30,40,50];
+            document.write(name+"<br>");
+            // accessing through index
+            document.write("index(0) :"+name[0]+"<br>")
+            document.write("index(1) :"+name[1]+"<br>")
+            document.write("index(2) :"+name[2]+"<br>")
+            document.write("index(3) :"+name[3]+"<br>")
+            document.write("index(4) :"+name[4]+"<br>")
+            // length of array
+            document.write("length :"+name.length+"<br>");
+            //print all elements through loops
+            for(let i=0;i<name.length;i++)
+                 {
+                    document.write(name[i]);
+                 }
+            // for-of loop
+             document.write("<br><br>");
+            for(let ele of name)
+            {
+                document.write(ele);
+            }
+             document.write("<br><br>");
+            //finding average
+            sum =0;
+            for(let ele of name)
+            {
+                sum+=ele;
+            }
+            document.write("total sum:"+sum+"<br>");
+            document.write("Average: " + (sum / name.length) + "<br>");
+            //push method
+            name.push(60);
+            name.push(70);
+            name.push(80);
+            document.write(name);
+            //pop method
+             document.write("<br><br>");
+            name.pop()
+            document.write(name);
+            //conact
+             document.write("<br><br>");
+            let age=[80,90,100]
+            document.write(name.concat(age));
+        </script>
+    </body>
+</html>
