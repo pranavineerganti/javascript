@@ -1,0 +1,73 @@
+<!--- <html>
+    <head>
+        form handling
+    </head>
+    <body>
+        <h1> form handling</h1>
+        <form>
+            <input type="text" pattern="[A-Za-z]" placeholder="name">
+            <input type="number" max="10" placeholder="mobile number" required>
+            <input type="email" placeholder="email">
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html> ---> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation Selectors</title>
+
+    <style>
+        /* Disabled input */
+        input:disabled {
+            background-color: lightgray;
+        }
+
+        /* Required input */
+        input:required {
+            border: 2px solid blue;
+        }
+
+        /* Optional input */
+        input:optional {
+            border: 2px dashed orange;
+        }
+
+        /* Invalid input */
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        /* Valid input */
+        input:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form Validation Example</h2>
+
+    <form>
+        <!-- Disabled -->
+        <label>Username (Disabled):</label><br>
+        <input type="text" disabled><br><br>
+
+        <!-- Required -->
+        <label>Email (Required):</label><br>
+        <input type="email" required><br><br>
+
+        <!-- Optional -->
+        <label>Nickname (Optional):</label><br>
+        <input type="text"><br><br>
+
+        <!-- Required with validation -->
+        <label>Age (18 to 60):</label><br>
+        <input type="number" min="18" max="60" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

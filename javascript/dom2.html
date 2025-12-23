@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>welcome to the page</title>
+</head>
+
+    <body>
+        <h1> hey welcom to the DOM manipulation page</h1>
+        <p id="demo">hey this is from p tag</p>
+        <p> this second tag</p>
+        <button id="hey" onclick="change()">this is id</button>
+
+        <ol>
+            <li class="sample"> pranavi</li>
+            <li class ="sample">nani</li>
+            <li class="sample">neeruganti</li>
+        </ol>
+        <ul>
+            <li class="sample1"> pranavi</li>
+            <li class ="sample1">nani</li>
+            <li class="sample1">neeruganti</li>
+        </ul>
+        <ul>
+            <li class="sample2"> pranavi</li>
+            <li class ="sample2">nani</li>
+            <li class="sample2">neeruganti</li>
+        </ul>
+        <script>
+         function change()
+         {
+            document.getElementById("hey").style.backgroundColor="green";
+         }
+         document.getElementsByTagName("p")[1].style.backgroundColor="red";
+         document.getElementsByTagName("p")[0].style.fontWeight = "bold";
+         document.getElementsByClassName("sample")[1].style.color="blue";
+         document.querySelector(".sample1").style.color="pink";
+         document.querySelectorAll(".sample2").forEach(item=>
+         {
+            item.style.color="grey"
+         });
+        </script>
+    </body>
+</html>

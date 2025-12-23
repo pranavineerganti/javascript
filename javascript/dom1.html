@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> this is basic example for dom</title>
+    </head>
+    <body>
+        <h1 id="heading">this content wil change if u click the button below</h1>
+        <ul id="names"> 
+            <li> pranavi</li>
+            <li>sai</li>
+        </ul>
+        <button id="add"> click me to add</button>
+        <button id="remove"> click me to remove</button>
+        <button id="change">click me to change the content</button>
+          <!--  <button id="demo" onclick="fun()"> change me </button> -->
+        <script>
+            /*document.replaceChild(demo1,demo);
+            function fun()
+            {
+            document.getElementById("demo").innerHTML = "Hello World!";
+            }*/
+
+
+
+          /*  //this is example for creating element dyanamically
+           let li=document.createElement("li");
+           li.innerHTML=prompt();
+           document.getElementById("names").appendChild(li);*/
+
+
+
+          // example for element manipulation
+          document.getElementById("add").addEventListener("click",function()
+           {
+            let li=document.createElement("li");
+           li.innerHTML=prompt();
+           document.getElementById("names").appendChild(li);
+
+           })
+
+          document.getElementById("remove").addEventListener("click", function () {
+
+            let list = document.getElementById("names");
+
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            } else {
+                alert("No elements to remove");
+            }
+        });
+
+         document.getElementById("change").addEventListener("click", function () {
+
+            let oldHeading = document.getElementById("heading");
+            let newHeading = document.createElement("h1");
+            newHeading.id = "heading"; // IMPORTANT
+            newHeading.innerText = "Heading Replaced Successfully";
+            oldHeading.parentNode.replaceChild(newHeading, oldHeading);
+        });
+
+
+        </script>
+    </body>
+</html>
